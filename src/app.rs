@@ -15,6 +15,7 @@ fn home_page() -> Html {
     html! {
         <>
             <h1>{ "Home" }</h1>
+            <SongSearch />
         </>
     }
 }
@@ -22,8 +23,9 @@ fn home_page() -> Html {
 fn song_page(id: String) -> Html {
     html! {
         <>
+            <h1> { "Song Search" } </h1>
             <SongSearch />
-            <h1>{ "Song" }</h1>
+            <h2>{ "Song" }</h2>
             <p>{ id }</p>
             // Get song data from API.
         </>
