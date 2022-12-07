@@ -41,6 +41,7 @@ fn switch(route: Route) -> Html {
 
 #[function_component(SongSearch)]
 fn song_search() -> Html {
+    log!("SongSearch rendered");
     let input_node_ref = use_node_ref();
     let navigator = use_navigator().unwrap();
     let onsubmit = {
@@ -61,9 +62,7 @@ fn song_search() -> Html {
     };
     html!{
         <form onsubmit = {onsubmit} >
-            <input ref = {input_node_ref} type="text"
-                name="song_id"
-            />
+            <input ref = {input_node_ref} type="text"/>
             <input type="submit" value = "Get Song by ID"/>
         </form>
     }
