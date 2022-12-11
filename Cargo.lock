@@ -613,6 +613,7 @@ name = "testing_yew_router_and_forms"
 version = "0.1.0"
 dependencies = [
  "gloo-console",
+ "serde",
  "wasm-bindgen",
  "web-sys",
  "yew",
